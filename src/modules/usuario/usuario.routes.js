@@ -8,5 +8,6 @@ const router = Router(); // uso el metodo Router()de express para crear las ruta
 // la ruta tiene dos parametros la ruta en si misma,
 // y el metodo que la resuelve
 router.get("/usuarios", usuarioCtr.obtenerUsuarios);
+router.get("/usuarios/:id", usuarioCtr.obtenerUsuarioId);
 
 export default router;
